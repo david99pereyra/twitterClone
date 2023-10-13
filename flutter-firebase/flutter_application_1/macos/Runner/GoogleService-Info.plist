@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>353971769035-gatr38c8b4p4qk78rkk0lekiskh5iatv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.353971769035-gatr38c8b4p4qk78rkk0lekiskh5iatv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC9X9Ry_BmqfNA8SsiNgIl-7JYNMvHUnmk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>353971769035</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.flutterApplication1.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>prueba-df2e2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>prueba-df2e2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:353971769035:ios:9d1177c7a6e75bd680d54e</string>
+	<key>DATABASE_URL</key>
+	<string>https://prueba-df2e2-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
