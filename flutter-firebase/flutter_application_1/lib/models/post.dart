@@ -5,20 +5,23 @@ class PostModel {
   final String creador;
   final String texto;
   final Timestamp fecha;
+  //final double calificacion;
 
-  PostModel(
+  PostModel( 
       {required this.id,
       required this.creador,
       required this.fecha,
-      required this.texto});
+      required this.texto,
+     });
 
   PostModel.fromJson(Map<String, Object?> json)
-    : this(
-        id: json['id']! as String,
-        creador: json['creador']! as String,
-        fecha: json['fecha']! as Timestamp,
-        texto: json['texto']! as String,
-      );
+      : this(
+          id: json['id']! as String,
+          creador: json['creador']! as String,
+          fecha: json['fecha']! as Timestamp,
+          texto: json['texto']! as String,
+          
+        );
 
   Map<String, Object> toJson() {
     return {
@@ -26,6 +29,7 @@ class PostModel {
       'creador': creador,
       'fecha': fecha,
       'texto': texto,
+     
     };
   }
 }

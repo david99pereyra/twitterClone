@@ -13,9 +13,8 @@ class Wrapper extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final user = Provider.of<UserModel?>(context);
-    print(user);
     if (user == null) {
-      return const sign();
+      return const Sign();
     }
 
     return MaterialApp(
@@ -26,6 +25,7 @@ class Wrapper extends StatelessWidget {
         '/profile': (context) => const Profile(),
         '/edit': (context) => const Edit(),
       },
+      debugShowCheckedModeBanner: false
     );
   }
 }

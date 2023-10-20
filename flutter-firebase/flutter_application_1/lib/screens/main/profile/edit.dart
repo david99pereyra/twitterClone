@@ -18,7 +18,7 @@ class _EditState extends State<Edit> {
   String name = '';
 
   Future getImagen(int type) async {
-    final pickedFile = await picker.pickImage(source: ImageSource.gallery);
+    final pickedFile = await picker.pickImage(source: ImageSource.camera);
 
     setState(() {
       if (pickedFile != null && type == 0) {
@@ -59,8 +59,8 @@ class _EditState extends State<Edit> {
                   // ignore: unnecessary_null_comparison
                   child: _profileImage == null
                       ? const Icon(Icons.person)
-                      : Image.network(
-                          _profileImage!.path,
+                      : Image.file(
+                          _profileImage!,
                           height: 100,
                         )),
               TextButton(
@@ -68,8 +68,8 @@ class _EditState extends State<Edit> {
                   // ignore: unnecessary_null_comparison
                   child: _bannerImage == null
                       ? const Icon(Icons.person)
-                      : Image.network(
-                          _bannerImage!.path,
+                      : Image.file(
+                          _bannerImage!,
                           height: 100,
                         )),
               TextFormField(

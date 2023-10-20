@@ -6,7 +6,14 @@ class AuthService {
   FirebaseAuth auth = FirebaseAuth.instance;
 
   UserModel? _userFromFirebaseUser(User? user) {
-    return user != null ? UserModel(id: user.uid) : null;
+    return user != null
+        ? UserModel(
+            id: user.uid,
+            bannerImageUrl: 'bannerImageUrl',
+            profileImageUrl: 'profileImageUrl',
+            name: 'name',
+            email: 'email')
+        : null;
   }
 
   Stream<UserModel?> get user {

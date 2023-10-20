@@ -15,7 +15,7 @@ class _AddState extends State<Add> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Tweettear'),
+        title: const Text('Twittear'),
         actions: <Widget>[
           ElevatedButton(
             onPressed: () async {

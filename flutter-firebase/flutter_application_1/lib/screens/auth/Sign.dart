@@ -1,17 +1,17 @@
-import 'package:flutter/material.dart'; 
+import 'package:flutter/material.dart';
 import 'package:flutter_application_1/services/auth.dart';
 
 
 // ignore: camel_case_types
-class sign extends StatefulWidget {
-  const sign({super.key});
+class Sign extends StatefulWidget {
+  const Sign({super.key});
 
   @override
-  State<sign> createState() => _signState();
+  State<Sign> createState() => _SignState();
 }
 
 // ignore: camel_case_types
-class _signState extends State<sign> {
+class _SignState extends State<Sign> {
   final AuthService _authService = AuthService();
 
   String email = "";
@@ -22,7 +22,7 @@ class _signState extends State<sign> {
       appBar: AppBar(
         backgroundColor: Colors.blue,
         elevation: 8,
-        title: const Text("signUp"),
+        title: const Text("SignUp"),
       ),
       body: Container(
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 50),
@@ -40,12 +40,12 @@ class _signState extends State<sign> {
               }),
             ),
             ElevatedButton(
-                child: Text("SignIn"),
+                child: const Text("SignIn"),
                 onPressed: () async => {
                       _authService.SignIn(email, pass),
                     }),
             ElevatedButton(
-                child: Text("SignUp"),
+                child: const Text("SignUp"),
                 onPressed: () async => {
                       _authService.SignUp(email, pass),
                     }),
